@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.dom.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <script src="libraries/p5.dom.js"></script>
+  <script src="sketch.js"></script>
+  <title>Voedsel Doorstralen</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <section class="header">
+    <h1 class="title">Hoe gaat het doorstralen van voedsel?</h1>
+    <h2 class="subtitle">door Jolanda Meima, Ward van der Spijk, Stijn Sannen en Mike Kuijper</h2>
+  </section>
+
+  <section class="contents">
+    <div id="text">
+      <div>
+        <h1 class="title">Tussenkop 1</h1>
+        <h>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec est urna. Mauris at justo tempor, fermentum tellus at, venenatis neque. Praesent eu velit sed ex mollis facilisis. Curabitur sit amet vulputate orci, eget congue justo.
+          Ut
+          vehicula orci sed dolor efficitur, sed lobortis leo sodales. Vestibulum ac sapien massa. Ut placerat ac mauris at blandit. Phasellus rhoncus tempor nulla et venenatis. Aenean pellentesque sollicitudin sapien eget facilisis. Nam et euismod
+          diam. Cras fringilla, diam eu blandit luctus, libero eros posuere dui, at commodo quam neque ac orci. Cras nec felis vulputate, rhoncus tellus vel, pretium risus.</h>
+        <br>
+        <br>
+        <h>
+          Proin justo mi, semper eu dolor at, tristique laoreet neque. Nulla tristique porttitor risus ac suscipit. Donec vel congue felis. Nam a erat eget felis scelerisque ornare eget vitae mi. Ut vulputate, nulla vel suscipit finibus, lectus ante
+          aliquet massa, ac sagittis quam lacus vitae ex. Nunc eu tortor eget sapien cursus tincidunt. Suspendisse et mauris id erat maximus commodo vitae ut dui. Suspendisse molestie interdum blandit. Proin ac neque ligula. Nulla sagittis lacus
+          mauris,
+          porttitor lacinia dui ullamcorper ut. Vivamus pellentesque elit in ullamcorper dictum. Duis ornare orci vitae nisi egestas, sit amet interdum lacus ultrices. Integer sagittis a erat sit amet bibendum. Proin in auctor enim, eget pharetra
+          metus.
+          Fusce mattis finibus velit, eget rhoncus orci elementum sed.
+        </h>
+        <br>
+        <br>
+
+      </div>
+      <div>
+        <h1 class="title">Tussenkop 2</h1>
+        <h>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec est urna. Mauris at justo tempor, fermentum tellus at, venenatis neque. Praesent eu velit sed ex mollis facilisis. Curabitur sit amet vulputate orci, eget congue justo.
+          Ut
+          vehicula orci sed dolor efficitur, sed lobortis leo sodales. Vestibulum ac sapien massa. Ut placerat ac mauris at blandit. Phasellus rhoncus tempor nulla et venenatis. Aenean pellentesque sollicitudin sapien eget facilisis. Nam et euismod
+          diam. Cras fringilla, diam eu blandit luctus, libero eros posuere dui, at commodo quam neque ac orci. Cras nec felis vulputate, rhoncus tellus vel, pretium risus.</h>
+        <br>
+        <br>
+        <h>
+          Proin justo mi, semper eu dolor at, tristique laoreet neque. Nulla tristique porttitor risus ac suscipit. Donec vel congue felis. Nam a erat eget felis scelerisque ornare eget vitae mi. Ut vulputate, nulla vel suscipit finibus, lectus ante
+          aliquet massa, ac sagittis quam lacus vitae ex. Nunc eu tortor eget sapien cursus tincidunt. Suspendisse et mauris id erat maximus commodo vitae ut dui. Suspendisse molestie interdum blandit. Proin ac neque ligula. Nulla sagittis lacus
+          mauris,
+          porttitor lacinia dui ullamcorper ut. Vivamus pellentesque elit in ullamcorper dictum. Duis ornare orci vitae nisi egestas, sit amet interdum lacus ultrices. Integer sagittis a erat sit amet bibendum. Proin in auctor enim, eget pharetra
+          metus.
+          Fusce mattis finibus velit, eget rhoncus orci elementum sed.
+        </h>
+        <br>
+        <br>
+        <h>
+          Maecenas vel dolor accumsan augue dignissim ultricies. Morbi pharetra tincidunt laoreet. Nam sagittis tortor eu neque vehicula, sit amet pharetra mauris fermentum. Proin aliquam ante ut ipsum hendrerit, sit amet hendrerit sem vestibulum.
+          Aenean vel ultrices metus. Donec sit amet ipsum sit amet risus auctor vulputate. Curabitur vitae massa ex. Quisque nisi dolor, egestas at elementum at, dignissim a purus. Etiam egestas eleifend leo nec dictum. In id elit nec nunc pharetra
+          sagittis et id nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam pellentesque nisl erat, sed posuere mauris mollis in. Sed ac diam et libero fringilla ornare. Etiam egestas enim id sem
+          ultrices gravida. Nullam a purus sem. Quisque maximus nunc et leo vehicula, at euismod turpis tincidunt.
+        </h>
+        <br>
+        <br>
+    </div>
+
+    <form id="inputForm">
+      <div id="settings">
+        <h2 style="text-align: center; color: #ffffff; font-size: 2em; font-weight: bolder">Instellingen</h2>
+        <div style="text-align: center">
+          <a onClick="start()" class="yesButton">Start</a>
+          <a onClick="location.reload()" class="noButton">Reset</a>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+          <div class="column" id="column-0">
+            <label style="color:#ffffff">Variable 1 (unit):</label><br>
+            <input class="numberInput" type="number" value="10"><br>
+            <label style="color:#ffffff">Variable 2 (unit):</label><br>
+            <input class="numberInput" type="number" value="10"><br>
+            <label style="color:#ffffff">Variable 3 (unit):</label><br>
+            <input class="numberInput" type="number" value="10"><br>
+          </div>
+          <div class="column" id="column-1">
+            <label style="color:#ffffff">Variable 4 (unit):</label><br>
+            <input class="numberInput" type="number" value="10"><br>
+            <label style="color:#ffffff">Variable 5 (unit):</label><br>
+            <input class="numberInput" type="number" value="10"><br>
+            <label style="color:#ffffff">Variable 6 (unit):</label><br>
+            <input class="numberInput" type="number" value="10"><br>
+          </div>
+          <div class="column" id="column-2">
+            <label style="color:#ffffff">Variable 7 (unit):</label><br>
+            <input class="numberInput" type="number" value="10"><br>
+            <label style="color:#ffffff">Variable 8 (unit):</label><br>
+            <input class="numberInput" type="number" value="10"><br>
+            <label style="color:#ffffff">Variable 9 (unit):</label><br>
+            <input class="numberInput" type="number" value="10"><br>
+          </div>
+        </div>
+        <br>
+      </div>
+    </form>
+
+    <div id="sketch-holder" class="container"></div>
+  </section>
+</body>
+
+</html>

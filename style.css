@@ -1,0 +1,189 @@
+html {
+  font-family: Akrobat;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  margin: 0
+}
+
+h {
+  font-size: 12;
+  font-weight: normal;
+}
+
+form {
+  background-color: #002141;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  width: auto;
+  height: auto;
+  margin: 20px;
+}
+
+.column {
+  float: left;
+  flex: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  display: flex;
+  text-align: center;
+}
+
+.header {
+  color: #fff;
+  text-align: center;
+  background-color: #000000;
+  background-image: url("./media/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+  font-size: 3em
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  font-weight: normal;
+  opacity: 0.7
+}
+
+.contents {
+  word-wrap: break-word;
+}
+
+.yesButton {
+  cursor: pointer;
+  padding: 9px 45px;
+  align-content: center;
+  background-color: #60E1E0;
+  border: 1px solid #129490;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.yesButton:hover {
+  background-color: #129490;
+}
+
+.noButton {
+  cursor: pointer;
+  padding: 9px 45px;
+  align-content: center;
+  background-color: #CE1F1F;
+  border: 1px solid #961515;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.noButton:hover {
+  background-color: #961515;
+}
+
+.numberInput {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 20px;
+  width: 80%;
+  margin: 5px;
+  padding: 10px 20px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252,252,252,1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.container {
+  display:block;
+  height: 800px;
+  background-image: url("media/wallpaper2.png");
+  background-position: center;
+}
+
+@media screen and (min-width: 64em) {
+  .contents {
+    max-width: 64rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem
+  }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .contents {
+    padding: 2rem 4rem;
+    font-size: 1.1rem
+  }
+}
+
+@media screen and (max-width: 42em) {
+  .contents {
+    padding: 2rem 1rem;
+    font-size: 1rem
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .header {
+    padding: 5rem 6rem
+  }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .header {
+    padding: 3rem 4rem
+  }
+}
+
+@media screen and (max-width: 42em) {
+  .header {
+    padding: 2rem 1rem
+  }
+}
+
+@font-face {
+  font-family: Akrobat;
+  font-weight: bolder;
+  src: url('./media/Akrobat-Black.otf');
+}
+
+@font-face {
+  font-family: Akrobat;
+  font-weight: normal;
+  src: url('./media/Akrobat-Regular.otf');
+}
+
+@font-face {
+  font-family: Akrobat;
+  font-weight: lighter;
+  src: url('./media/Akrobat-Light.otf');
+}
+
+@font-face {
+  font-family: Akrobat;
+  font-weight: bold;
+  src: url('./media/Akrobat-Bold.otf');
+}
