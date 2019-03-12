@@ -40,53 +40,39 @@
 
       </div>
       <div>
-        <h1 class="title">Waarom wordt avocado niet doorstraald</h1>
+        <h1 class="title">Waarom wordt avocado niet doorstraald?</h1>
         <h>Het is in Nederland verboden om voedsel door te stralen, tenzij er ontheffing voor het voedingsmiddel is. Hier is de NVWA degene die toezicht houdt op doorstralen van voedsel. De NVWA houdt overigens toezicht op alles wat te maken heeft met eten, dierenwelzijn en natuurgebieden. Je mag niet al het voedsel bestralen, omdat dat ten eerste erg veel radioactief afval en dat soort gedoe geeft en omdat je erna niet meer kan zien of eten bedorven of verrot is, dus mogen fruit en groente niet door de bestraler. Ook mogen bijna bedorven producten niet doorstraald worden. Daarbij kunnen niet alle voedingsmiddelen straling aan, avocado verandert bijvoorbeeld in guacamole.</h>
         <br>
         <br>
         <h>
-          Verschillende voedingsmiddelen mogen aan andere hoeveelheden straling blootgesteld worden. De dosis wordt gemeten in kGray, zie <stukje Ward>. Dit varieert van 1kGray op gedroogd fruit tot 75 kGray op steriel voedsel voor bijvoorbeeld hiv-patiënten en mensen die behandeld zijn voor leukemie en daarom geen witte bloedcellen meer hebben. Lage doses worden gebruikt voor het doden van insecten, larven en insecteneieren en hoge doses zijn om bacteriën en virussen te doden.
+          Verschillende voedingsmiddelen mogen aan andere hoeveelheden straling blootgesteld worden. De dosis wordt gemeten in kGray, zie [stukje Ward]. Dit varieert van 1 kGray op gedroogd fruit tot 75 kGray op steriel voedsel voor bijvoorbeeld hiv-patiënten en mensen die behandeld zijn voor leukemie en daarom geen witte bloedcellen meer hebben. Lage doses worden gebruikt voor het doden van insecten, larven en insecteneieren en hoge doses zijn om bacteriën en virussen te doden.
         </h>
         <br>
         <br>
-        
+
     </div>
 
     <form id="inputForm">
       <div id="settings">
         <h2 style="text-align: center; color: #ffffff; font-size: 2em; font-weight: bolder">Instellingen</h2>
-        <div style="text-align: center">
-          <a onClick="start()" class="yesButton">Start</a>
-          <a onClick="location.reload()" class="noButton">Reset</a>
-        </div>
-        <br>
-        <br>
-
         <div class="row">
           <div class="column" id="column-0">
-            <label style="color:#ffffff">Variable 1 (unit):</label><br>
-            <input class="numberInput" type="number" value="10"><br>
-            <label style="color:#ffffff">Variable 2 (unit):</label><br>
-            <input class="numberInput" type="number" value="10"><br>
-            <label style="color:#ffffff">Variable 3 (unit):</label><br>
-            <input class="numberInput" type="number" value="10"><br>
+            <label style="color:#ffffff">Halfwaardetijd (seconden):</label><br>
+            <input id="halfLife" class="numberInput" type="number" value="5"><br>
+            <label style="color:#ffffff">Geluidseffecten:</label><br>
+            <input id="soundfx" class="checkbox" type="checkbox" checked><br>
           </div>
           <div class="column" id="column-1">
-            <label style="color:#ffffff">Variable 4 (unit):</label><br>
-            <input class="numberInput" type="number" value="10"><br>
-            <label style="color:#ffffff">Variable 5 (unit):</label><br>
-            <input class="numberInput" type="number" value="10"><br>
-            <label style="color:#ffffff">Variable 6 (unit):</label><br>
-            <input class="numberInput" type="number" value="10"><br>
+            <label style="color:#ffffff">Aantal atomen:</label><br>
+            <input id="atomCount" class="numberInput" type="number" value="2000"><br>
+            <label style="color:#ffffff">Pauzeer op halfwaardetijd:</label><br>
+            <input id="pauseOnHalfLife" class="checkbox" type="checkbox"><br>
           </div>
-          <div class="column" id="column-2">
-            <label style="color:#ffffff">Variable 7 (unit):</label><br>
-            <input class="numberInput" type="number" value="10"><br>
-            <label style="color:#ffffff">Variable 8 (unit):</label><br>
-            <input class="numberInput" type="number" value="10"><br>
-            <label style="color:#ffffff">Variable 9 (unit):</label><br>
-            <input class="numberInput" type="number" value="10"><br>
-          </div>
+        </div>
+        <br>
+        <div style="text-align: center">
+          <a onClick="start()" class="yesButton">Start</a>
+          <a onClick="reset()" class="noButton">Reset</a>
         </div>
         <br>
       </div>
